@@ -4,27 +4,27 @@
     <locations class="java.util.ArrayList">
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.loopslab.wordbywordquran.ayah.ayahword.AyahWordActivity" />
+                className="com.sadaqaworks.quranprojects.ayah.ayahword.AyahWordActivity" />
             <point x="1212" y="168" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.loopslab.wordbywordquran.various.settings.SettingsActivity" />
+                className="com.sadaqaworks.quranprojects.various.settings.SettingsActivity" />
             <point x="304" y="564" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.loopslab.wordbywordquran.MainActivity" />
+                className="com.sadaqaworks.quranprojects.MainActivity" />
             <point x="1312" y="300" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.loopslab.wordbywordquran.ayah.tafsir.TafsirActivity" />
+                className="com.sadaqaworks.quranprojects.ayah.tafsir.TafsirActivity" />
             <point x="172" y="112" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.loopslab.wordbywordquran.various.AboutActivity" />
+                className="com.sadaqaworks.quranprojects.various.AboutActivity" />
             <point x="700" y="300" />
         </statePointEntry>
     </locations>

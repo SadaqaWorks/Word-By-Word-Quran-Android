@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.loopslab.wordbywordquran"
+    package="com.sadaqaworks.quranprojects"
     >
 
     <application
-        android:name=".App"
+        android:name="com.sadaqaworks.quranprojects.App"
         android:allowBackup="true"
         android:configChanges="keyboardHidden|orientation|screenSize"
         android:fullBackupContent="false"
@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme.Mushaf" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.sadaqaworks.quranprojects.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,34 +21,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ayah.ayahword.AyahWordActivity"
-            android:parentActivityName=".MainActivity" >
+            android:name="com.sadaqaworks.quranprojects.ayah.ayahword.AyahWordActivity"
+            android:parentActivityName="com.sadaqaworks.quranprojects.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.loopslab.wordbywordquran.MainActivity" />
+                android:value="com.sadaqaworks.quranprojects.MainActivity" />
         </activity>
         <activity
-            android:name=".various.settings.SettingsActivity"
+            android:name="com.sadaqaworks.quranprojects.various.settings.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.sadaqaworks.quranprojects.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.loopslab.wordbywordquran.MainActivity" />
+                android:value="com.sadaqaworks.quranprojects.MainActivity" />
         </activity>
         <activity
-            android:name=".various.AboutActivity"
+            android:name="com.sadaqaworks.quranprojects.various.AboutActivity"
             android:label="@string/title_about"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName="com.sadaqaworks.quranprojects.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.loopslab.wordbywordquran.MainActivity" />
+                android:value="com.sadaqaworks.quranprojects.MainActivity" />
         </activity>
         <activity
-            android:name=".ayah.tafsir.TafsirActivity"
-            android:parentActivityName=".ayah.ayahword.AyahWordActivity" >
+            android:name="com.sadaqaworks.quranprojects.ayah.tafsir.TafsirActivity"
+            android:parentActivityName="com.sadaqaworks.quranprojects.ayah.ayahword.AyahWordActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ayah.ayahword.AyahWordActivity" />
+                android:value="com.sadaqaworks.quranprojects.ayah.ayahword.AyahWordActivity" />
         </activity>
     </application>
 

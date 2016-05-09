@@ -33,7 +33,7 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
-    <com.loopslab.wordbywordquran.text.ArabicTextView
+    <com.sadaqaworks.quranprojects.text.ArabicTextView
         android:id="@+id/arabic_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large">
 
-    </com.loopslab.wordbywordquran.text.ArabicTextView>
+    </com.sadaqaworks.quranprojects.text.ArabicTextView>
 
     <View
         android:id="@+id/divider"

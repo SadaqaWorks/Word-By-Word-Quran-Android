@@ -8,11 +8,11 @@
     android:orientation="vertical"
     android:padding="@dimen/textViewPadding">
 
-    <com.loopslab.wordbywordquran.text.ArabicTextView
+    <com.sadaqaworks.quranprojects.text.ArabicTextView
         android:id="@+id/word_arabic_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    </com.loopslab.wordbywordquran.text.ArabicTextView>
+    </com.sadaqaworks.quranprojects.text.ArabicTextView>
 
     <TextView
         android:id="@+id/word_trans_textView"

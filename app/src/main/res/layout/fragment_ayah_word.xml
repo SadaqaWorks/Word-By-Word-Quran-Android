@@ -35,7 +35,7 @@
             android:padding="4dp"
             android:layout_gravity="center"/>-->
 
-        <com.loopslab.wordbywordquran.text.ArabicTextView
+        <com.sadaqaworks.quranprojects.text.ArabicTextView
           android:id="@+id/headerTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:textSize="@dimen/fontSizeArabicHeader"
          >
 
-        </com.loopslab.wordbywordquran.text.ArabicTextView>
+        </com.sadaqaworks.quranprojects.text.ArabicTextView>
 
     </com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader>
 
