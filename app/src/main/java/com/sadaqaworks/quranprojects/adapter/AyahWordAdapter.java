@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.ayah.ayahword;
+package com.sadaqaworks.quranprojects.adapter;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -17,9 +17,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.ayah.ayahword.corpus.Corpus;
-import com.sadaqaworks.quranprojects.ayah.ayahword.corpus.CorpusDataSource;
-import com.sadaqaworks.quranprojects.ayah.tafsir.TafsirActivity;
+import com.sadaqaworks.quranprojects.model.AyahWord;
+import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
+import com.sadaqaworks.quranprojects.model.Word;
+import com.sadaqaworks.quranprojects.model.Corpus;
+import com.sadaqaworks.quranprojects.database.datasource.CorpusDataSource;
+import com.sadaqaworks.quranprojects.activity.TafsirActivity;
 import com.sadaqaworks.quranprojects.various.layout.FlowLayout;
 import com.sadaqaworks.quranprojects.various.settings.Config;
 

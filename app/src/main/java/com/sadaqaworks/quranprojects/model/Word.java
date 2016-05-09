@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.ayah.ayahword;
+package com.sadaqaworks.quranprojects.model;
 
 /**
  * Created by Sadmansamee on 7/19/15.

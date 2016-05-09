@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects;
+package com.sadaqaworks.quranprojects.activity;
 
 import android.app.FragmentManager;
 import android.app.ProgressDialog;
@@ -17,13 +17,12 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
-import com.sadaqaworks.quranprojects.surah.Surah;
-import com.sadaqaworks.quranprojects.surah.SurahDataSource;
-import com.sadaqaworks.quranprojects.surah.SurahFragment;
-import com.sadaqaworks.quranprojects.various.AboutActivity;
+import com.sadaqaworks.quranprojects.model.Surah;
+import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
+import com.sadaqaworks.quranprojects.fragment.SurahFragment;
 import com.sadaqaworks.quranprojects.various.settings.Config;
-import com.sadaqaworks.quranprojects.various.settings.SettingsActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;

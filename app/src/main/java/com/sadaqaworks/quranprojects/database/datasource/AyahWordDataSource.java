@@ -1,10 +1,12 @@
-package com.sadaqaworks.quranprojects.ayah.ayahword;
+package com.sadaqaworks.quranprojects.database.datasource;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.sadaqaworks.quranprojects.model.AyahWord;
+import com.sadaqaworks.quranprojects.model.Word;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
 
 import java.util.ArrayList;

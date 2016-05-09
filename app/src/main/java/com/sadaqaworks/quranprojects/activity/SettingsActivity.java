@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.various.settings;
+package com.sadaqaworks.quranprojects.activity;
 
 
 import android.app.FragmentManager;

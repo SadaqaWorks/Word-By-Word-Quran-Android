@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
     <item
         android:id="@+id/join_group"
         android:orderInCategory="100"

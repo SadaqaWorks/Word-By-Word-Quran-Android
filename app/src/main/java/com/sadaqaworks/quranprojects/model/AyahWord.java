@@ -1,4 +1,6 @@
-package com.sadaqaworks.quranprojects.ayah.ayahword;
+package com.sadaqaworks.quranprojects.model;
+
+import com.sadaqaworks.quranprojects.model.Word;
 
 import java.util.ArrayList;
 

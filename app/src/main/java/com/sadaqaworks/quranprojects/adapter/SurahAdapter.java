@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.surah;
+package com.sadaqaworks.quranprojects.adapter;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sadaqaworks.quranprojects.R;
+import com.sadaqaworks.quranprojects.model.Surah;
 import com.sadaqaworks.quranprojects.various.OnItemClickListener;
 
 import java.util.ArrayList;

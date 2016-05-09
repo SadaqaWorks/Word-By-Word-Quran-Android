@@ -1,9 +1,10 @@
-package com.sadaqaworks.quranprojects.ayah.ayahword.corpus;
+package com.sadaqaworks.quranprojects.database.datasource;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.sadaqaworks.quranprojects.model.Corpus;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
 
 /**

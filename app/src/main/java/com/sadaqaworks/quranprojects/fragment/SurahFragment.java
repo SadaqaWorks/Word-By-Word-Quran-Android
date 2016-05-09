@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.surah;
+package com.sadaqaworks.quranprojects.fragment;
 
 
 import android.app.Fragment;
@@ -15,7 +15,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.ayah.ayahword.AyahWordActivity;
+import com.sadaqaworks.quranprojects.activity.AyahWordActivity;
+import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
+import com.sadaqaworks.quranprojects.model.Surah;
+import com.sadaqaworks.quranprojects.adapter.SurahAdapter;
 import com.sadaqaworks.quranprojects.various.OnItemClickListener;
 import com.sadaqaworks.quranprojects.various.settings.Config;
 

@@ -1,10 +1,11 @@
-package com.sadaqaworks.quranprojects.surah;
+package com.sadaqaworks.quranprojects.database.datasource;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
+import com.sadaqaworks.quranprojects.model.Surah;
 
 import java.util.ArrayList;
 

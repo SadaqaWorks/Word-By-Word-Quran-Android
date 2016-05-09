@@ -4,27 +4,27 @@
     <locations class="java.util.ArrayList">
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.sadaqaworks.quranprojects.ayah.ayahword.AyahWordActivity" />
+                className="com.sadaqaworks.quranprojects.activity.AyahWordActivity" />
             <point x="1212" y="168" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.sadaqaworks.quranprojects.various.settings.SettingsActivity" />
+                className="com.sadaqaworks.quranprojects.activity.SettingsActivity" />
             <point x="304" y="564" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.sadaqaworks.quranprojects.MainActivity" />
+                className="com.sadaqaworks.quranprojects.activity.MainActivity" />
             <point x="1312" y="300" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.sadaqaworks.quranprojects.ayah.tafsir.TafsirActivity" />
+                className="com.sadaqaworks.quranprojects.activity.TafsirActivity" />
             <point x="172" y="112" />
         </statePointEntry>
         <statePointEntry>
             <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.sadaqaworks.quranprojects.various.AboutActivity" />
+                className="com.sadaqaworks.quranprojects.activity.AboutActivity" />
             <point x="700" y="300" />
         </statePointEntry>
     </locations>

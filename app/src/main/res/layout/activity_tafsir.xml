@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.sadaqaworks.quranprojects.ayah.tafsir.TafsirActivity">
+    tools:context=".activity.TafsirActivity">
 
     <include
         layout="@layout/toolbar"

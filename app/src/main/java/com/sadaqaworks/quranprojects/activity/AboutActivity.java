@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.various;
+package com.sadaqaworks.quranprojects.activity;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;

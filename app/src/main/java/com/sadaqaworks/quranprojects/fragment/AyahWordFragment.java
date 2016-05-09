@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.ayah.ayahword;
+package com.sadaqaworks.quranprojects.fragment;
 
 
 import android.app.Fragment;
@@ -14,7 +14,10 @@ import android.widget.TextView;
 
 import com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader;
 import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.surah.SurahDataSource;
+import com.sadaqaworks.quranprojects.adapter.AyahWordAdapter;
+import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
+import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
+import com.sadaqaworks.quranprojects.model.AyahWord;
 import com.sadaqaworks.quranprojects.various.settings.Config;
 
 import java.util.ArrayList;

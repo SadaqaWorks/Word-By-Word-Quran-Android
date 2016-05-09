@@ -1,4 +1,4 @@
-package com.sadaqaworks.quranprojects.ayah.tafsir;
+package com.sadaqaworks.quranprojects.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 
 import com.sadaqaworks.quranprojects.R;
+import com.sadaqaworks.quranprojects.model.Tafsir;
 
 import java.util.ArrayList;
 
