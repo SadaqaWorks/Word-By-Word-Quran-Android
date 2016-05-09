@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#43A047</color>
+    <color name="primaryColorDark">#388E3C</color>
+    <color name="accentColor">#FFC107</color>
+    <color name="dividerColor">#B6B6B6</color>
+    <color name="lightPrimaryColor">#B6B6B6</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#727272</color>
+
+
+    <color name="mushaf2">#eeeade</color>
+    <color name="mushaf3">#ede6d3</color>
+    <color name="mushaf4">#ddcca2</color>
+    <color name="mushaf5">#dcd69c</color>
+
+</resources>

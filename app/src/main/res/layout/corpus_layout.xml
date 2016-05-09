@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mushaf3">
+
+    <LinearLayout
+        android:id="@+id/corpus_word_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/textViewMargin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/textViewPadding">
+
+        <com.loopslab.wordbywordquran.text.ArabicTextView
+            android:id="@+id/corpus_word_arabic_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.loopslab.wordbywordquran.text.ArabicTextView>
+
+        <TextView
+            android:id="@+id/corpus_word_trans_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineWidth"
+        android:layout_below="@id/corpus_word_layout"
+        android:background="@android:color/darker_gray" />
+
+    <com.loopslab.wordbywordquran.various.layout.FlowLayout
+        android:id="@+id/flow_corpus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textViewMargin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/textViewPadding">
+
+            <TextView
+                android:id="@+id/arabic1TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSizeArabic" />
+
+            <TextView
+                android:id="@+id/arabic1TypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textViewMargin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/textViewPadding">
+
+            <TextView
+                android:id="@+id/arabic2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSizeArabic" />
+
+            <TextView
+                android:id="@+id/arabic2TypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textViewMargin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/textViewPadding">
+
+            <TextView
+                android:id="@+id/arabic3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSizeArabic" />
+
+            <TextView
+                android:id="@+id/arabic3TypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textViewMargin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/textViewPadding">
+
+            <TextView
+                android:id="@+id/arabic4TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSizeArabic" />
+
+            <TextView
+                android:id="@+id/arabic4TypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/textViewMargin"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/textViewPadding">
+
+            <TextView
+                android:id="@+id/arabic5TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontSizeArabic" />
+
+            <TextView
+                android:id="@+id/arabic5TypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+
+    </com.loopslab.wordbywordquran.various.layout.FlowLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lineWidth"
+        android:layout_below="@id/flow_corpus"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/divider2"
+        android:layout_margin="@dimen/textViewMargin"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/textViewPadding">
+
+        <TextView
+            android:id="@+id/rootArabicTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fontSizeArabic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rootTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rootWord"
+            android:visibility="gone">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

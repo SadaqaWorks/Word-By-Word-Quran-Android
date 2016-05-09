@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_ayah_word"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/verse_id_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
+
+    <com.loopslab.wordbywordquran.text.ArabicTextView
+        android:id="@+id/arabic_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:padding="@dimen/textViewPadding"
+        android:visibility="gone"></com.loopslab.wordbywordquran.text.ArabicTextView>
+
+
+    <com.loopslab.wordbywordquran.various.layout.FlowLayout
+        android:id="@+id/flow_word_by_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></com.loopslab.wordbywordquran.various.layout.FlowLayout>
+
+
+    <TextView
+        android:id="@+id/translate_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:padding="@dimen/textViewPadding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/lineWidth"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

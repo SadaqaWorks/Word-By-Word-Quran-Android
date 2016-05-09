@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rateUsButton"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="@dimen/textViewMargin"
+                android:background="@color/mushaf3"
+                android:gravity="center"
+                android:padding="@dimen/textViewPadding"
+                android:text="@string/rats_us"
+                android:textSize="@dimen/fontSizeText" />
+
+
+            <Button
+                android:id="@+id/shareCopyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="@dimen/textViewMargin"
+                android:background="@color/mushaf3"
+                android:gravity="center"
+                android:padding="@dimen/textViewPadding"
+                android:text="@string/shareCopy"
+                android:textSize="@dimen/fontSizeText" />
+
+            <TextView
+                android:id="@+id/tv_see_apps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+
+                android:layout_margin="@dimen/textViewMargin"
+                android:gravity="center"
+                android:padding="@dimen/textViewPadding"
+                android:text="@string/see_apps"
+                android:textSize="@dimen/fontSizeText" />
+
+            <ImageButton
+                android:id="@+id/iv_loopslab_logo"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:padding="@dimen/textViewPadding"
+                android:src="@drawable/ic_loopslab_logo" />
+
+            <TextView
+                android:id="@+id/mail_loopslab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="@dimen/textViewMargin"
+                android:gravity="center"
+                android:padding="@dimen/textViewPadding"
+                android:text="@string/mail_us"
+                android:textSize="@dimen/fontSizeText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

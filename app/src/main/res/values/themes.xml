@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:divider">@color/dividerColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme.Mushaf" parent="AppTheme.Base">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+        <item name="android:windowBackground">@color/mushaf2</item>
+        <item name="android:colorBackgroundCacheHint">@color/mushaf2</item>
+        <item name="pagerTitleStripBackground">#88b131</item>
+        <item name="pagerTitleStripTextColor">#fff</item>
+    </style>
+
+    <style name="AppTheme.White" parent="AppTheme.Base">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="pagerTitleStripBackground">#33b5e5</item>
+        <item name="pagerTitleStripTextColor">#fff</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lang_names">
+        <item>বাংলা</item>
+        <item>English</item>
+        <item>Indonesian</item>
+    </string-array>
+
+    <string-array name="lang_codes">
+        <item>bn</item>
+        <item>en</item>
+        <item>indo</item>
+    </string-array>
+
+    <string-array name="arabic_font">
+        <item>Amiri</item>
+        <item>Me Quran</item>
+        <item>PDMS Islamic</item>
+        <item>PDMS Quran</item>
+        <item>Uthmani</item>
+    </string-array>
+
+    <string-array name="arabic_font_code">
+        <item>amiri.ttf</item>
+        <item>me_quran.ttf</item>
+        <item>PDMS_IslamicFont.ttf</item>
+        <item>PDMS_Saleem_QuranFont.ttf</item>
+        <item>Uthmani.otf</item>
+    </string-array>
+
+    <string-array name="arabic_font_sizes">
+        <item>22</item>
+        <item>26</item>
+        <item>30</item>
+        <item>34</item>
+        <item>38</item>
+        <item>42</item>
+        <item>46</item>
+    </string-array>
+
+    <string-array name="translation_font_sizes">
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+    </string-array>
+
+    <string-array name="aya_operations">
+        <item>@string/copy</item>
+        <item>@string/share</item>
+    </string-array>
+
+    <string-array name="corpus_word_type">
+        <item>Accusative particle</item>
+        <item>Adjective</item>
+        <item>Amendment particle</item>
+        <item>Answer particle</item>
+        <item>Aversion Particle</item>
+        <item>Particle of cause</item>
+        <item>Particle of certainty</item>
+        <item>Circumstance particle</item>
+        <item>Comitative particle</item>
+        <item>Conditional particle</item>
+        <item>Coordinating conjunction</item>
+        <item>Demonstrative Pronoun</item>
+        <item>Determiner</item>
+        <item>Emphatic iaam prefix</item>
+        <item>Equalization particle</item>
+        <item>Exhortation particle</item>
+        <item>Explanation particle</item>
+        <item>Exceptive particle</item>
+        <item>Future particle</item>
+        <item>Imperative particle</item>
+        <item>imperative iaam prefix</item>
+        <item>Inceptive particle</item>
+        <item>Quranic initial</item>
+        <item>Particle of interpretation</item>
+        <item>Interrogative particle</item>
+        <item>Locative adverb</item>
+        <item>Noun</item>
+        <item>Negative pronoun</item>
+        <item>Preposition</item>
+        <item>Proper noun</item>
+        <item>Preventive particle</item>
+        <item>Prohibition particle</item>
+        <item>Personal pronoun</item>
+        <item>Purpose iaam prefix</item>
+        <item>Relative pronoun</item>
+        <item>Resumption particle</item>
+        <item>Restriction</item>
+        <item>Retraction particle</item>
+        <item>Result particle</item>
+        <item>Subordinating conjunction</item>
+        <item>Supplemental particle</item>
+        <item>Surprise particle</item>
+        <item>Time adverb</item>
+        <item>Verb</item>
+        <item>Vocative particle</item>
+
+    </string-array>
+
+</resources>

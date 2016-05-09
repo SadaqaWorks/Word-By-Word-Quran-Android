@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/content">
+        <ListPreference
+            android:defaultValue="en"
+            android:entries="@array/lang_names"
+            android:entryValues="@array/lang_codes"
+            android:key="lang"
+            android:title="@string/lang" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showTranslation"
+            android:title="@string/show_trans" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="wordByWord"
+            android:title="@string/wordbyword" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/appearance">
+
+        <ListPreference
+            android:defaultValue="PDMS_IslamicFont.ttf"
+            android:entries="@array/arabic_font"
+            android:entryValues="@array/arabic_font_code"
+            android:key="arabicFont"
+
+            android:title="@string/arabic_font" />
+
+        <ListPreference
+            android:defaultValue="34"
+            android:entries="@array/arabic_font_sizes"
+            android:entryValues="@array/arabic_font_sizes"
+            android:key="fontSizeArabic"
+            android:title="@string/arabic_font_size" />
+        <ListPreference
+            android:defaultValue="16"
+            android:entries="@array/translation_font_sizes"
+            android:entryValues="@array/translation_font_sizes"
+            android:key="fontSizeTranslation"
+            android:title="@string/trans_font_size" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/other">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="keepScreenOn"
+            android:title="@string/screen_on" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
