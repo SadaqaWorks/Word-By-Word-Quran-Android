@@ -1,4 +1,4 @@
-# QuranProjects
+# Word By Word Quran Android
 ![Quran Project](https://github.com/SadaqaWorks/QuranProjects/blob/master/quran.gif)
 
 ## Contributing
