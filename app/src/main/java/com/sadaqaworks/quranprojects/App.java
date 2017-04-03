@@ -28,28 +28,28 @@ public class App extends Application {
         app = this;
         config.load(this);
         Log.e("app ", "onCreate");
-        loadFont();
+        //loadFont();
     }
 
-    public boolean loadFont() {
-        if (!loadedFont.equals(config.fontArabic) || !loadedFontSize.equals(config.fontSizeArabic)) {
-
-            try {
-
-                Log.e("App: config.fontArabic", loadedFont + " " + config.fontArabic + " size: " + loadedFontSize + config.fontSizeArabic);
-                NativeRenderer.loadFont(this.getResources().getAssets().open(config.fontArabic));
-                FontCache.getInstance().clearCache();
-                loadedFont = config.fontArabic;
-                loadedFontSize = config.fontSizeArabic;
-            } catch (IOException e) {
-                Log.e("app", "LoadFont Failed");
-                e.printStackTrace();
-                loadedFont = "1";
-                loadedFontSize = "1";
-                return false;
-            }
-        }
-        Log.e("app", "LoadFont");
-        return true;
-    }
+//    public boolean loadFont() {
+//        if (!loadedFont.equals(config.fontArabic) || !loadedFontSize.equals(config.fontSizeArabic)) {
+//
+//            try {
+//
+//                Log.e("App: config.fontArabic", loadedFont + " " + config.fontArabic + " size: " + loadedFontSize + config.fontSizeArabic);
+//                NativeRenderer.loadFont(this.getResources().getAssets().open(config.fontArabic));
+//                FontCache.getInstance().clearCache();
+//                loadedFont = config.fontArabic;
+//                loadedFontSize = config.fontSizeArabic;
+//            } catch (IOException e) {
+//                Log.e("app", "LoadFont Failed");
+//                e.printStackTrace();
+//                loadedFont = "1";
+//                loadedFontSize = "1";
+//                return false;
+//            }
+//        }
+//        Log.e("app", "LoadFont");
+//        return true;
+//    }
 }
