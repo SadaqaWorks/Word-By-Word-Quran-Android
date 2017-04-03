@@ -123,66 +123,12 @@ public class AyahWordFragment extends Fragment {
                 ayahWordArrayList = ayahWordDataSource.getEnglishAyahWordsBySurah(surah_id, ayah_number);
                 break;
         }
-    /*
-        if(lang.equals(Config.LANG_BN))
-        {
-            ayahWordArrayList = ayahWordDataSource.getBanglaAyahWordsBySurah(surah_id, ayah_number);
-            Log.d("AyahwordFragment",lang);
-        }else if(lang.equals(Config.LANG_INDO))
-        {
-            ayahWordArrayList = ayahWordDataSource.getIndonesianAyahWordsBySurah(surah_id, ayah_number);
-            Log.d("AyahwordFragment",lang);
-        }else {
-            Log.d("AyahwordFragment",lang);
-            ayahWordArrayList = ayahWordDataSource.getEnglishAyahWordsBySurah(surah_id, ayah_number);
-        }*/
 
-
-/*
-        for(AyahWord ayahWord:ayahWordArrayList) {
-
-            for (Word word : ayahWord.getWord()) {
-                //ayahWordString += word.getAyahWord_words_ar()+"\n"+word.getAyahWord_translate();
-
-                Log.d("Word: ", word.getAyahWord_verse_id() + " " + word.getAyahWord_translate());
-
-            }
-        }*/
 
         return ayahWordArrayList;
     }
 
-/*
-    private class AsyncLoadData extends AsyncTask<Void, Void, Void> {
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            surah_id = getArguments().getLong(SurahDataSource.SURAH_ID_TAG);
-            ayah_number = getArguments().getLong(SurahDataSource.SURAH_AYAH_NUMBER);
-        }
 
-        @Override
-        protected Void doInBackground(Void... params) {
-
-            ayahWordArrayList = getAyahWordsBySurah(surah_id, ayah_number);
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void result) {
-            super.onPostExecute(result);
-
-            mRecyclerView.setVisibility(View.VISIBLE);
-            ayahWordAdapter = new AyahWordAdapter(ayahWordArrayList, getActivity());
-            mRecyclerView.setAdapter(ayahWordAdapter);
-            mRecyclerView.setHasFixedSize(true);
-            mLayoutManager = new LinearLayoutManager(getActivity());
-            mRecyclerView.setLayoutManager(mLayoutManager);
-            mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-
-        }
-    }
-*/
 
 
 }

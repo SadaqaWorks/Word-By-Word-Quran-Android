@@ -141,21 +141,6 @@ public class SurahFragment extends Fragment {
                 break;
         }
 
-
-       /* if(lang.equals(Config.LANG_BN))
-        {
-            Log.d("SurahFragment",lang);
-            surahArrayList = surahDataSource.getBanglaSurahArrayList();
-        }else if(lang.equals(Config.LANG_INDO))
-        {
-            Log.d("SurahFragment",lang);
-            surahArrayList = surahDataSource.getIndonesianSurahArrayList();
-        }else {
-            Log.d("SurahFragment",lang);
-            surahArrayList = surahDataSource.getEnglishSurahArrayList();
-        }*/
-
-
         return surahArrayList;
     }
 
