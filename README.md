@@ -1,6 +1,11 @@
 # Word By Word Quran Android
 ![Quran Project](https://github.com/SadaqaWorks/QuranProjects/blob/master/quran.gif)
 
+## Features
+1. In three languages English, Bangla, Indonesia (more lang can be added too)
+2. Word By Word meaning in those three language 
+3. Gramitical analysis for each word
+
 ## Contributing
 
 1. Create an issue to discuss about your idea
