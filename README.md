@@ -2,9 +2,14 @@
 ![Quran Project](https://github.com/SadaqaWorks/QuranProjects/blob/master/quran.gif)
 
 ## Features
-1. In three languages English, Bangla, Indonesia (more lang can be added too)
+1. In three languages English, Bangla, Indonesia (more translation can be added  from ![here](http://tanzil.net/trans/) or ![here](https://github.com/SadaqaWorks/IslamicDatabase))
 2. Word By Word meaning in those three language 
 3. Gramitical analysis for each word
+
+## Features can be added 
+1. More translation can be added  from ![here](http://tanzil.net/trans/) or ![here](https://github.com/SadaqaWorks/IslamicDatabase).
+2. Audio play like ![this](https://github.com/quran/quran_android).
+3. More polished UI
 
 ## Contributing
 
