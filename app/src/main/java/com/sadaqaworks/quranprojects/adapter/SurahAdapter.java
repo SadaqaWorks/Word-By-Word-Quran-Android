@@ -10,8 +10,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.sadaqaworks.quranprojects.R;
+import com.sadaqaworks.quranprojects.intrface.OnItemClickListener;
 import com.sadaqaworks.quranprojects.model.Surah;
-import com.sadaqaworks.quranprojects.various.OnItemClickListener;
 
 import java.util.ArrayList;
 

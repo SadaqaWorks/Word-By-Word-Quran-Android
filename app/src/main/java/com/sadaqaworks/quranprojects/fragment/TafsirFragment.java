@@ -10,10 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.model.Tafsir;
 import com.sadaqaworks.quranprojects.adapter.TafsirAdapter;
 import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
 import com.sadaqaworks.quranprojects.database.datasource.TafsirKathirEnglishDataSource;
+import com.sadaqaworks.quranprojects.model.Tafsir;
 
 import java.util.ArrayList;
 

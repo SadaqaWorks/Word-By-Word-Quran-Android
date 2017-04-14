@@ -16,11 +16,11 @@ import android.view.ViewGroup;
 
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.activity.AyahWordActivity;
-import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
-import com.sadaqaworks.quranprojects.model.Surah;
 import com.sadaqaworks.quranprojects.adapter.SurahAdapter;
-import com.sadaqaworks.quranprojects.various.OnItemClickListener;
-import com.sadaqaworks.quranprojects.various.settings.Config;
+import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
+import com.sadaqaworks.quranprojects.intrface.OnItemClickListener;
+import com.sadaqaworks.quranprojects.model.Surah;
+import com.sadaqaworks.quranprojects.util.settings.Config;
 
 import java.util.ArrayList;
 
@@ -70,9 +70,9 @@ public class SurahFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 //set Adapter with Animation
-      //  SlideInLeftAnimationAdapter slideInLeftAnimationAdapter = new SlideInLeftAnimationAdapter(surahAdapter);
-      //  slideInLeftAnimationAdapter.setInterpolator(new OvershootInterpolator());
-      //  slideInLeftAnimationAdapter.setFirstOnly(false);
+        //  SlideInLeftAnimationAdapter slideInLeftAnimationAdapter = new SlideInLeftAnimationAdapter(surahAdapter);
+        //  slideInLeftAnimationAdapter.setInterpolator(new OvershootInterpolator());
+        //  slideInLeftAnimationAdapter.setFirstOnly(false);
         mRecyclerView.setAdapter(surahAdapter);
 
 

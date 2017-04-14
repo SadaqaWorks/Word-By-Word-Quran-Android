@@ -2,13 +2,6 @@
 <resources>
     <string name="app_name">শব্দার্থে কুরআন</string>
 
-    <!---->
-    <string name="joinGroupTitle">গ্রুপে যোগদিন</string>
-    <string name="joinGroupDesc">শব্দে শব্দে কুরআনের বাংলা ডাটাবেজ এর কাজ চলছে আপনিও এই সদকায়ে জারিয়া এর আমলে যোগদিন।\n
-দেখুনঃ http://bit.ly/WordByWord</string>
-    <string name="groupLink" translatable="false">https://www.facebook.com/groups/965394863503715/</string>
-
-
     <string name="action_about">সম্পর্কে</string>
     <string name="action_rateUs">রেট দিন</string>
     <string name="action_settings">সেটিংস</string>
@@ -17,13 +10,9 @@
     <string name="cancel">বাদ দিন</string>
     <string name="copyToastText">কপি করা হয়েছে</string>
 
-    <string name="mail_us">মেইল দিন : labloops@gmail.com</string>
     <string name="other">অন্যান্য</string>
-    <string name="rats_us">রেট দিন</string>
     <string name="rootWord">মুল শব্দ</string>
     <string name="screen_on">স্ক্রিন জাগ্রত থাকুক</string>
-    <string name="see_apps"><u>আমাদের আরও অ্যাপ</u></string>
-    <string name="shareCopy">অ্যাপ এর লিঙ্ক শেয়ার/কপি করুন</string>
     <string name="show_trans">অনুবাদ দেখাবে</string>
     <string name="title_about">সম্পর্কে</string>
     <string name="title_activity_settings">সেটিংস</string>

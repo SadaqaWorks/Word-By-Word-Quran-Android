@@ -8,46 +8,43 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_ayah_word_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         />
+        android:layout_height="wrap_content" />
 
     <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
         android:id="@+id/fast_scroller"
         android:layout_width="@dimen/scroller"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="@dimen/scrollerPadding"
-        />
+        android:layout_marginLeft="@dimen/scrollerPadding" />
 
     <com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader
         android:id="@+id/header"
-        android:background="@color/mushaf3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:background="@color/mushaf3"
+        android:gravity="center">
 
-       <!-- <ImageView
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/bismillah2"
-            android:padding="4dp"
-            android:layout_gravity="center"/>-->
+        <!-- <ImageView
+             android:layout_width="300dp"
+             android:layout_height="70dp"
+             android:scaleType="fitXY"
+             android:src="@drawable/bismillah2"
+             android:padding="4dp"
+             android:layout_gravity="center"/>-->
 
-        <com.sadaqaworks.quranprojects.text.ArabicTextView
-          android:id="@+id/headerTextView"
+        <TextView
+            android:id="@+id/headerTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lineSpacingExtra="@dimen/lineSpacingExtra"
-
             android:gravity="center"
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
             android:padding="@dimen/textViewPadding"
             android:text="@string/bismillah"
-            android:textSize="@dimen/fontSizeArabicHeader"
-         >
+            android:textSize="@dimen/fontSizeArabicHeader">
 
-        </com.sadaqaworks.quranprojects.text.ArabicTextView>
+        </TextView>
 
     </com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader>
 

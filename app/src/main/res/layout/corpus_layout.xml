@@ -15,12 +15,12 @@
         android:orientation="vertical"
         android:padding="@dimen/textViewPadding">
 
-        <com.sadaqaworks.quranprojects.text.ArabicTextView
+        <TextView
             android:id="@+id/corpus_word_arabic_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-        </com.sadaqaworks.quranprojects.text.ArabicTextView>
+        </TextView>
 
         <TextView
             android:id="@+id/corpus_word_trans_textView"
@@ -37,7 +37,7 @@
         android:layout_below="@id/corpus_word_layout"
         android:background="@android:color/darker_gray" />
 
-    <com.sadaqaworks.quranprojects.various.layout.FlowLayout
+    <com.sadaqaworks.quranprojects.view.layout.FlowLayout
         android:id="@+id/flow_corpus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -156,7 +156,7 @@
         </LinearLayout>
 
 
-    </com.sadaqaworks.quranprojects.various.layout.FlowLayout>
+    </com.sadaqaworks.quranprojects.view.layout.FlowLayout>
 
     <View
         android:id="@+id/divider2"

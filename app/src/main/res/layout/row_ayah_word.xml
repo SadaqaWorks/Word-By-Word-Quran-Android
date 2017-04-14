@@ -14,20 +14,20 @@
         android:gravity="start"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"></TextView>
 
-    <com.sadaqaworks.quranprojects.text.ArabicTextView
+    <TextView
         android:id="@+id/arabic_textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:padding="@dimen/textViewPadding"
-        android:visibility="gone"></com.sadaqaworks.quranprojects.text.ArabicTextView>
+        android:visibility="gone"></TextView>
 
 
-    <com.sadaqaworks.quranprojects.various.layout.FlowLayout
+    <com.sadaqaworks.quranprojects.view.layout.FlowLayout
         android:id="@+id/flow_word_by_word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"></com.sadaqaworks.quranprojects.various.layout.FlowLayout>
+        android:visibility="gone"></com.sadaqaworks.quranprojects.view.layout.FlowLayout>
 
 
     <TextView

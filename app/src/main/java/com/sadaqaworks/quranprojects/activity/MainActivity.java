@@ -19,10 +19,10 @@ import android.view.MenuItem;
 
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
-import com.sadaqaworks.quranprojects.model.Surah;
 import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
 import com.sadaqaworks.quranprojects.fragment.SurahFragment;
-import com.sadaqaworks.quranprojects.various.settings.Config;
+import com.sadaqaworks.quranprojects.model.Surah;
+import com.sadaqaworks.quranprojects.util.settings.Config;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -85,12 +85,10 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
         String lang = sp.getString(Config.LANG, Config.defaultLang);
-        //to show join group
-        if (lang.equals(Config.LANG_BN)) {
-            getMenuInflater().inflate(R.menu.menu_main_bn, menu);
-        } else {
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-        }
+
+
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+
 
 
         return true;
@@ -110,14 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 //MainActivity.this.finish();
                 return true;
-            case R.id.action_about:
-                Intent intentAbout = new Intent(this, AboutActivity.class);
-                startActivity(intentAbout);
-                return true;
 
-            case R.id.join_group:
-                joinGroup();
-                return true;
 /*
             case R.id.rateUs:
                 Intent intentRate = new Intent(
@@ -159,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentManager1.beginTransaction()
                                 .replace(R.id.main_container, SurahFragment.newInstance())
                                 .commit();
-                        joinGroup();
+
                         break;
                     case 1:
                         SharedPreferences.Editor ed2 = sharedPreferences.edit();
@@ -194,35 +185,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void joinGroup() {
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setCancelable(true);
-        builder.setMessage(R.string.joinGroupDesc);
-        builder.setTitle(R.string.joinGroupTitle);
-        builder.setPositiveButton(R.string.joinGroupTitle, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-
-                Intent intent = new Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse(getString(R.string.groupLink)));
-                startActivity(intent);
-
-            }
-        });
-        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
-        });
-        builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
-            public void onCancel(DialogInterface dialog) {
-
-            }
-        });
-
-        builder.show();
-    }
 
     public void setLocaleBangla() {
         Locale locale = new Locale(Config.LANG_BN);

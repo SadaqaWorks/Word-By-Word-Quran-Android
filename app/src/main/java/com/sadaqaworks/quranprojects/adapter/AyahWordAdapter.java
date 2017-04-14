@@ -17,14 +17,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.model.AyahWord;
-import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
-import com.sadaqaworks.quranprojects.model.Word;
-import com.sadaqaworks.quranprojects.model.Corpus;
-import com.sadaqaworks.quranprojects.database.datasource.CorpusDataSource;
 import com.sadaqaworks.quranprojects.activity.TafsirActivity;
-import com.sadaqaworks.quranprojects.various.layout.FlowLayout;
-import com.sadaqaworks.quranprojects.various.settings.Config;
+import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
+import com.sadaqaworks.quranprojects.database.datasource.CorpusDataSource;
+import com.sadaqaworks.quranprojects.model.AyahWord;
+import com.sadaqaworks.quranprojects.model.Corpus;
+import com.sadaqaworks.quranprojects.model.Word;
+import com.sadaqaworks.quranprojects.util.settings.Config;
+import com.sadaqaworks.quranprojects.view.layout.FlowLayout;
 
 import java.util.ArrayList;
 

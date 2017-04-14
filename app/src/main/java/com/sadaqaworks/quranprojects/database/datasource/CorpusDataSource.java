@@ -4,8 +4,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.sadaqaworks.quranprojects.model.Corpus;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
+import com.sadaqaworks.quranprojects.model.Corpus;
 
 /**
  * Created by Sadmansamee on 8/10/15.

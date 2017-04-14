@@ -10,9 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.WindowManager;
 
 import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.fragment.AyahWordFragment;
 import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
-import com.sadaqaworks.quranprojects.various.settings.Config;
+import com.sadaqaworks.quranprojects.fragment.AyahWordFragment;
+import com.sadaqaworks.quranprojects.util.settings.Config;
 
 public class AyahWordActivity extends AppCompatActivity {
 

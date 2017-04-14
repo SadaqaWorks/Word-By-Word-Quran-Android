@@ -5,11 +5,8 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.sadaqaworks.quranprojects.text.FontCache;
-import com.sadaqaworks.quranprojects.text.NativeRenderer;
-import com.sadaqaworks.quranprojects.various.settings.Config;
+import com.sadaqaworks.quranprojects.util.settings.Config;
 
-import java.io.IOException;
 
 /**
  * Created by Sadmansamee on 7/27/15.

@@ -18,7 +18,7 @@ import com.sadaqaworks.quranprojects.adapter.AyahWordAdapter;
 import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
 import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
 import com.sadaqaworks.quranprojects.model.AyahWord;
-import com.sadaqaworks.quranprojects.various.settings.Config;
+import com.sadaqaworks.quranprojects.util.settings.Config;
 
 import java.util.ArrayList;
 
@@ -89,15 +89,15 @@ public class AyahWordFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         //set Adapter with Animation
-      //  ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(ayahWordAdapter);
-      //  scaleInAnimationAdapter.setInterpolator(new OvershootInterpolator());
+        //  ScaleInAnimationAdapter scaleInAnimationAdapter = new ScaleInAnimationAdapter(ayahWordAdapter);
+        //  scaleInAnimationAdapter.setInterpolator(new OvershootInterpolator());
         mRecyclerView.setAdapter(ayahWordAdapter);
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         mRecyclerView.setVerticalScrollBarEnabled(true);
-        
+
 
         //set headerview
         RecyclerViewHeader recyclerViewHeader = (RecyclerViewHeader) view.findViewById(R.id.header);
@@ -127,8 +127,6 @@ public class AyahWordFragment extends Fragment {
 
         return ayahWordArrayList;
     }
-
-
 
 
 }

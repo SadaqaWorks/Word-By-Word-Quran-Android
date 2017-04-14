@@ -22,10 +22,6 @@
                 className="com.sadaqaworks.quranprojects.activity.TafsirActivity" />
             <point x="172" y="112" />
         </statePointEntry>
-        <statePointEntry>
-            <state class="com.android.tools.idea.editors.navigation.model.ActivityState"
-                className="com.sadaqaworks.quranprojects.activity.AboutActivity" />
-            <point x="700" y="300" />
-        </statePointEntry>
+
     </locations>
 </navigationModel>

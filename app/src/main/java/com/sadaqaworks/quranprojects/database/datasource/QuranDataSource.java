@@ -4,8 +4,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.sadaqaworks.quranprojects.model.Quran;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
+import com.sadaqaworks.quranprojects.model.Quran;
 
 import java.util.ArrayList;
 

@@ -5,9 +5,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.sadaqaworks.quranprojects.database.DatabaseHelper;
 import com.sadaqaworks.quranprojects.model.AyahWord;
 import com.sadaqaworks.quranprojects.model.Word;
-import com.sadaqaworks.quranprojects.database.DatabaseHelper;
 
 import java.util.ArrayList;
 

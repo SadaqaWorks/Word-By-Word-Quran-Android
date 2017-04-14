@@ -1,4 +1,6 @@
 <resources>
+
     <style name="AppTheme.Mushaf.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="AppTheme.Mushaf.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

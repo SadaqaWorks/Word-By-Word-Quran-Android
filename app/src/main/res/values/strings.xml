@@ -9,13 +9,7 @@
     <string name="action_rateUs">Rate us</string>
 
     <!--About-->
-    <string name="see_apps"><u>Our other Apps</u></string>
-    <string name="mail_us">Mail us: labloops@gmail.com</string>
-    <string name="rats_us">Rate Us</string>
-    <string name="mail_loopslab" translatable="false">labloops@hmail.com</string>
-    <string name="loopslab" translatable="false">https://play.google.com/store/apps/developer?id=LoopsLab</string>
-    <string name="loopslabFb" translatable="false">https://www.facebook.com/LoopsLabBd</string>
-    <string name="shareCopy">Share/Copy App\'s link</string>
+
     <string name="copyToastText">Copied to Clipboard</string>
 
     <!-- Settings-->
