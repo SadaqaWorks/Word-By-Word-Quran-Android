@@ -87,9 +87,9 @@ public class SurahFragment extends Fragment {
             public void onItemClick(View v, int position) {
                 Surah surah = (Surah) surahAdapter.getItem(position);
 
-                long surah_id = surah.getSurah_id(); //mRecyclerView.getAdapter().getItemId(position);
-                long ayah_number = surah.getSurah_ayah_number();
-                String surah_name = surah.getSurah_name_translate();
+                long surah_id = surah.getId(); //mRecyclerView.getAdapter().getItemId(position);
+                long ayah_number = surah.getAyahNumber();
+                String surah_name = surah.getNameTranslate();
 
                 Log.d("SurahFragment", "ID: " + surah_id + " Surah Name: " + surah_name);
 

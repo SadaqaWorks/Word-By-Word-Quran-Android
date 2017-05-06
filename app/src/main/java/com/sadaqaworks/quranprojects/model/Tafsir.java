@@ -5,8 +5,8 @@ package com.sadaqaworks.quranprojects.model;
  */
 public class Tafsir {
     private long tafsirId;
-    private long surah_num;
-    private long ayah_num;
+    private long surahNum;
+    private long ayahNum;
     private String tafsirText;
 
 
@@ -18,20 +18,21 @@ public class Tafsir {
         this.tafsirId = tafsirId;
     }
 
-    public long getSurah_num() {
-        return surah_num;
+
+    public long getSurahNum() {
+        return surahNum;
     }
 
-    public void setSurah_num(long surah_num) {
-        this.surah_num = surah_num;
+    public void setSurahNum(long surahNum) {
+        this.surahNum = surahNum;
     }
 
-    public long getAyah_num() {
-        return ayah_num;
+    public long getAyahNum() {
+        return ayahNum;
     }
 
-    public void setAyah_num(long ayah_num) {
-        this.ayah_num = ayah_num;
+    public void setAyahNum(long ayahNum) {
+        this.ayahNum = ayahNum;
     }
 
     public String getTafsirText() {

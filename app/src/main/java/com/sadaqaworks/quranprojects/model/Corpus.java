@@ -4,26 +4,26 @@ package com.sadaqaworks.quranprojects.model;
  * Created by Sadmansamee on 8/10/15.
  */
 public class Corpus {
-    String pause_unicode;
-    String pause_type_id;
+    private String pause_unicode;
+    private String pause_type_id;
 
-    String _id;
-    String surah;
-    String ayah;
-    String word;
-    String arabic1;
-    String root;
-    String word_count;
-    String arabic2;
-    String arabic3;
-    String arabic4;
-    String arabic5;
+    private String _id;
+    private String surah;
+    private String ayah;
+    private String word;
+    private String arabic1;
+    private String root;
+    private String word_count;
+    private String arabic2;
+    private String arabic3;
+    private String arabic4;
+    private String arabic5;
 
-    long word_type_id1;
-    long word_type_id2;
-    long word_type_id3;
-    long word_type_id4;
-    long word_type_id5;
+    private long word_type_id1;
+    private long word_type_id2;
+    private long word_type_id3;
+    private long word_type_id4;
+    private long word_type_id5;
 
     public String getPause_unicode() {
         return pause_unicode;

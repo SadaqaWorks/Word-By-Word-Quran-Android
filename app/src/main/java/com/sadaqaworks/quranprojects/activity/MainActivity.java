@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -88,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
 
 
         return true;
@@ -184,7 +182,6 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
         return true;
     }
-
 
 
     public void setLocaleBangla() {

@@ -45,9 +45,9 @@ public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.SurahViewHol
     public void onBindViewHolder(SurahAdapter.SurahViewHolder holder, int position) {
 
         Surah surah = surahArrayList.get(position);
-        holder.surah_idTextView.setText(Long.toString(surah.getSurah_id()) + ".");
-        holder.translateTextView.setText(surah.getSurah_name_translate());
-        holder.arabicTextView.setText(surah.getSurah_name_arabic());
+        holder.surah_idTextView.setText(Long.toString(surah.getId()) + ".");
+        holder.translateTextView.setText(surah.getNameTranslate());
+        holder.arabicTextView.setText(surah.getNameArabic());
 
         if (position % 2 == 0) {
             holder.row_surah.setBackgroundColor(ContextCompat.getColor(context, R.color.mushaf3));
@@ -62,7 +62,7 @@ public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.SurahViewHol
     public long getItemId(int position) {
         //  Surah surah = surahArrayList.get(position);
 
-        return surahArrayList.get(position).getSurah_id();
+        return surahArrayList.get(position).getId();
     }
 
     public Object getItem(int position) {

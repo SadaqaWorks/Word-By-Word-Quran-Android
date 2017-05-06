@@ -73,7 +73,7 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
         long itemId = 1;
 
         for (Word word : ayahWord.getWord()) {
-            itemId = word.getAyahWord_verse_id();
+            itemId = word.getVerseId();
         }
         return itemId;
     }
@@ -105,8 +105,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                 final TextView translation = (TextView) view.findViewById(R.id.word_trans_textView);
                 arabic.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeArabic);
                 translation.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeTranslation);
-                arabic.setText(fixArabic(word.getAyahWord_words_ar()));
-                translation.setText(word.getAyahWord_translate());
+                arabic.setText(fixArabic(word.getWordsAr()));
+                translation.setText(word.getTranslate());
                 holder.flow_word_by_word.addView(view);
 
                 //corpus
@@ -115,19 +115,19 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                     public void onClick(View view) {
                         final Dialog dialog = new Dialog(context);
                         dialog.setContentView(R.layout.corpus_layout);
-                        dialog.setTitle(fixArabic(word.getAyahWord_words_ar()));
+                        dialog.setTitle(fixArabic(word.getWordsAr()));
 
                         Corpus corpus;
                         CorpusDataSource corpusDataSource = new CorpusDataSource(context);
-                        corpus = corpusDataSource.getCorpusBySurahAyahWord(surah_id, word.getAyahWord_verse_id(), word.getAyahWord_words_id());
+                        corpus = corpusDataSource.getCorpusBySurahAyahWord(surah_id, word.getVerseId(), word.getWordsId());
                         Log.e("arabic", corpus.getArabic1() + corpus.getArabic2() + corpus.getArabic3() + corpus.getArabic4() + corpus.getArabic5());
 
                         final TextView corpus_arabic = (TextView) dialog.findViewById(R.id.corpus_word_arabic_textView);
                         final TextView corpus_translation = (TextView) dialog.findViewById(R.id.corpus_word_trans_textView);
                         corpus_arabic.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeArabic);
                         corpus_translation.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeTranslation);
-                        corpus_arabic.setText(fixArabic(word.getAyahWord_words_ar()));
-                        corpus_translation.setText(word.getAyahWord_translate());
+                        corpus_arabic.setText(fixArabic(word.getWordsAr()));
+                        corpus_translation.setText(word.getTranslate());
 
                         TextView rootArabicTextView = (TextView) dialog.findViewById(R.id.rootArabicTextView);
                         TextView rootTextView = (TextView) dialog.findViewById(R.id.rootTextView);

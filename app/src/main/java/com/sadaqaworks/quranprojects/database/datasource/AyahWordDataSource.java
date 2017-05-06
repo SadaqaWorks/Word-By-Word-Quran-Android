@@ -85,10 +85,10 @@ public class AyahWordDataSource {
                 Word word = new Word();
                 // word.setAyahWord_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_ID)));
                 //word.setAyahWord_surah_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_SURAH_ID)));
-                word.setAyahWord_verse_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
-                word.setAyahWord_words_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
-                word.setAyahWord_words_ar(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
-                word.setAyahWord_translate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
+                word.setVerseId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
+                word.setWordsId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
+                word.setWordsAr(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
+                word.setTranslate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
                 //Log.d("AyahWordDataSource", "currentAyah: " + tempVerseId + " " + cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
                 wordArrayList.add(word);
                 cursor.moveToNext();
@@ -151,10 +151,10 @@ public class AyahWordDataSource {
                 Word word = new Word();
                 // word.setAyahWord_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_ID)));
                 //word.setAyahWord_surah_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_SURAH_ID)));
-                word.setAyahWord_verse_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
-                word.setAyahWord_words_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
-                word.setAyahWord_words_ar(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
-                word.setAyahWord_translate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_BN)));
+                word.setVerseId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
+                word.setWordsId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
+                word.setWordsAr(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
+                word.setTranslate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_BN)));
                 wordArrayList.add(word);
                 cursor.moveToNext();
 
@@ -209,10 +209,10 @@ public class AyahWordDataSource {
                 Word word = new Word();
                 // word.setAyahWord_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_ID)));
                 //word.setAyahWord_surah_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_SURAH_ID)));
-                word.setAyahWord_verse_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
-                word.setAyahWord_words_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
-                word.setAyahWord_words_ar(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
-                word.setAyahWord_translate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_INDO)));
+                word.setVerseId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
+                word.setWordsId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
+                word.setWordsAr(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
+                word.setTranslate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_INDO)));
 
                 //Log.d("AyahWordDataSource", "currentAyah: " + tempVerseId + " " + cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
                 wordArrayList.add(word);
@@ -259,10 +259,10 @@ public class AyahWordDataSource {
                 Word word = new Word();
                 // word.setAyahWord_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_ID)));
                 // word.setAyahWord_surah_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_SURAH_ID)));
-                word.setAyahWord_verse_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
-                word.setAyahWord_words_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
-                word.setAyahWord_words_ar(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
-                word.setAyahWord_translate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
+                word.setVerseId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
+                word.setWordsId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
+                word.setWordsAr(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
+                word.setTranslate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
                 // Log.d("AyahWordDataSource", "currentAyah: " + i + " " + cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
                 wordArrayList.add(word);
                 ayahWord.setWord(wordArrayList);
@@ -296,10 +296,10 @@ public class AyahWordDataSource {
             word = new Word();
             // word.setAyahWord_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_ID)));
             // word.setAyahWord_surah_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_SURAH_ID)));
-            word.setAyahWord_verse_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
-            word.setAyahWord_words_id(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
-            word.setAyahWord_words_ar(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
-            word.setAyahWord_translate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
+            word.setVerseId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_VERSE_ID)));
+            word.setWordsId(cursor.getLong(cursor.getColumnIndex(AYAHWORD_WORDS_ID)));
+            word.setWordsAr(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_AR)));
+            word.setTranslate(cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));
 
 
             Log.d("AyahWordDataSource", "currentAyah: " + " " + cursor.getString(cursor.getColumnIndex(AYAHWORD_WORDS_TRANSLATE_EN)));

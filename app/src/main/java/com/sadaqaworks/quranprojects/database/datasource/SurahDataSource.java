@@ -42,10 +42,10 @@ public class SurahDataSource {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             Surah surah = new Surah();
-            surah.setSurah_id(cursor.getLong(cursor.getColumnIndex(SURAH_ID)));
-            surah.setSurah_name_arabic(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ARABIC)));
-            surah.setSurah_name_translate(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ENGLISH)));
-            surah.setSurah_ayah_number(cursor.getLong(cursor.getColumnIndex(SURAH_AYAH_NUMBER)));
+            surah.setId(cursor.getLong(cursor.getColumnIndex(SURAH_ID)));
+            surah.setNameArabic(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ARABIC)));
+            surah.setNameTranslate(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ENGLISH)));
+            surah.setAyahNumber(cursor.getLong(cursor.getColumnIndex(SURAH_AYAH_NUMBER)));
             surahArrayList.add(surah);
             cursor.moveToNext();
 
@@ -67,10 +67,10 @@ public class SurahDataSource {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             Surah surah = new Surah();
-            surah.setSurah_id(cursor.getLong(cursor.getColumnIndex(SURAH_ID)));
-            surah.setSurah_name_arabic(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ARABIC)));
-            surah.setSurah_name_translate(cursor.getString(cursor.getColumnIndex(SURAH_NAME_BANGLA)));
-            surah.setSurah_ayah_number(cursor.getLong(cursor.getColumnIndex(SURAH_AYAH_NUMBER)));
+            surah.setId(cursor.getLong(cursor.getColumnIndex(SURAH_ID)));
+            surah.setNameArabic(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ARABIC)));
+            surah.setNameTranslate(cursor.getString(cursor.getColumnIndex(SURAH_NAME_BANGLA)));
+            surah.setAyahNumber(cursor.getLong(cursor.getColumnIndex(SURAH_AYAH_NUMBER)));
             surahArrayList.add(surah);
             cursor.moveToNext();
         }
@@ -88,10 +88,10 @@ public class SurahDataSource {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             Surah surah = new Surah();
-            surah.setSurah_id(cursor.getLong(cursor.getColumnIndex(SURAH_ID)));
-            surah.setSurah_name_arabic(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ARABIC)));
-            surah.setSurah_name_translate(cursor.getString(cursor.getColumnIndex(SURAH_ARTI_NAMA)));
-            surah.setSurah_ayah_number(cursor.getLong(cursor.getColumnIndex(SURAH_AYAH_NUMBER)));
+            surah.setId(cursor.getLong(cursor.getColumnIndex(SURAH_ID)));
+            surah.setNameArabic(cursor.getString(cursor.getColumnIndex(SURAH_NAME_ARABIC)));
+            surah.setNameTranslate(cursor.getString(cursor.getColumnIndex(SURAH_ARTI_NAMA)));
+            surah.setAyahNumber(cursor.getLong(cursor.getColumnIndex(SURAH_AYAH_NUMBER)));
             surahArrayList.add(surah);
             cursor.moveToNext();
         }
