@@ -1,6 +1,6 @@
 # Word By Word Quran Android
 ![Quran Project](https://github.com/SadaqaWorks/QuranProjects/blob/master/quran.gif)
-
+You may try it from here (https://play.google.com/store/apps/details?id=com.loopslab.wordbywordquran)
 ## Features
 1. In three languages English, Bangla, Indonesia (more translation can be added  from (http://tanzil.net/trans/) or (https://github.com/SadaqaWorks/IslamicDatabase))
 2. Word By Word meaning in those three language 
