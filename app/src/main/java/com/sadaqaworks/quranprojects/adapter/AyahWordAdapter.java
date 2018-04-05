@@ -101,8 +101,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
             for (final Word word : ayahWord.getWord()) {
 
                 final View view = inflater.inflate(R.layout.word_by_word, null);
-                final TextView arabic = (TextView) view.findViewById(R.id.word_arabic_textView);
-                final TextView translation = (TextView) view.findViewById(R.id.word_trans_textView);
+                final TextView arabic = view.findViewById(R.id.word_arabic_textView);
+                final TextView translation = view.findViewById(R.id.word_trans_textView);
                 arabic.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeArabic);
                 translation.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeTranslation);
                 arabic.setText(fixArabic(word.getWordsAr()));
@@ -122,15 +122,15 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                         corpus = corpusDataSource.getCorpusBySurahAyahWord(surah_id, word.getVerseId(), word.getWordsId());
                         Log.e("arabic", corpus.getArabic1() + corpus.getArabic2() + corpus.getArabic3() + corpus.getArabic4() + corpus.getArabic5());
 
-                        final TextView corpus_arabic = (TextView) dialog.findViewById(R.id.corpus_word_arabic_textView);
-                        final TextView corpus_translation = (TextView) dialog.findViewById(R.id.corpus_word_trans_textView);
+                        final TextView corpus_arabic = dialog.findViewById(R.id.corpus_word_arabic_textView);
+                        final TextView corpus_translation = dialog.findViewById(R.id.corpus_word_trans_textView);
                         corpus_arabic.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeArabic);
                         corpus_translation.setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSizeTranslation);
                         corpus_arabic.setText(fixArabic(word.getWordsAr()));
                         corpus_translation.setText(word.getTranslate());
 
-                        TextView rootArabicTextView = (TextView) dialog.findViewById(R.id.rootArabicTextView);
-                        TextView rootTextView = (TextView) dialog.findViewById(R.id.rootTextView);
+                        TextView rootArabicTextView = dialog.findViewById(R.id.rootArabicTextView);
+                        TextView rootTextView = dialog.findViewById(R.id.rootTextView);
                         try {
 
                             rootArabicTextView.setText(getRootInArabic(corpus.getRoot()));
@@ -144,8 +144,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
 
                         //if(corpus.getArabic1() != null )
                         //  {
-                        final TextView arabic1TextView = (TextView) dialog.findViewById(R.id.arabic1TextView);
-                        final TextView arabic1TypeTextView = (TextView) dialog.findViewById(R.id.arabic1TypeTextView);
+                        final TextView arabic1TextView = dialog.findViewById(R.id.arabic1TextView);
+                        final TextView arabic1TypeTextView = dialog.findViewById(R.id.arabic1TypeTextView);
                         arabic1TextView.setTypeface(corpusTypeface);
                         arabic1TextView.setVisibility(View.VISIBLE);
                         String arabic1 = new String(getUnicodeString(corpus.getArabic1()));
@@ -153,8 +153,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                         arabic1TypeTextView.setText(getCorpusArabicType(corpus.getWord_type_id1()));
                         //   }
                         if (!corpus.getArabic2().equals("")) {
-                            final TextView arabic2TextView = (TextView) dialog.findViewById(R.id.arabic2TextView);
-                            final TextView arabic2TypeTextView = (TextView) dialog.findViewById(R.id.arabic2TypeTextView);
+                            final TextView arabic2TextView = dialog.findViewById(R.id.arabic2TextView);
+                            final TextView arabic2TypeTextView = dialog.findViewById(R.id.arabic2TypeTextView);
                             arabic2TextView.setTypeface(corpusTypeface);
                             arabic2TextView.setVisibility(View.VISIBLE);
                             String arabic2 = new String(getUnicodeString(corpus.getArabic2()));
@@ -163,8 +163,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                         }
 
                         if (!corpus.getArabic3().equals("")) {
-                            final TextView arabic3TextView = (TextView) dialog.findViewById(R.id.arabic3TextView);
-                            final TextView arabic3TypeTextView = (TextView) dialog.findViewById(R.id.arabic3TypeTextView);
+                            final TextView arabic3TextView = dialog.findViewById(R.id.arabic3TextView);
+                            final TextView arabic3TypeTextView = dialog.findViewById(R.id.arabic3TypeTextView);
                             arabic3TextView.setTypeface(corpusTypeface);
                             arabic3TextView.setVisibility(View.VISIBLE);
                             String arabic3 = new String(getUnicodeString(corpus.getArabic3()));
@@ -173,8 +173,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                         }
 
                         if (!corpus.getArabic4().equals("")) {
-                            final TextView arabic4TextView = (TextView) dialog.findViewById(R.id.arabic4TextView);
-                            final TextView arabic4TypeTextView = (TextView) dialog.findViewById(R.id.arabic4TypeTextView);
+                            final TextView arabic4TextView = dialog.findViewById(R.id.arabic4TextView);
+                            final TextView arabic4TypeTextView = dialog.findViewById(R.id.arabic4TypeTextView);
                             arabic4TextView.setTypeface(corpusTypeface);
                             arabic4TextView.setVisibility(View.VISIBLE);
                             String arabic4 = new String(getUnicodeString(corpus.getArabic4()));
@@ -183,8 +183,8 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
                         }
 
                         if (!corpus.getArabic5().equals("")) {
-                            final TextView arabic5TextView = (TextView) dialog.findViewById(R.id.arabic5TextView);
-                            final TextView arabic5TypeTextView = (TextView) dialog.findViewById(R.id.arabic5TypeTextView);
+                            final TextView arabic5TextView = dialog.findViewById(R.id.arabic5TextView);
+                            final TextView arabic5TypeTextView = dialog.findViewById(R.id.arabic5TypeTextView);
                             arabic5TextView.setTypeface(corpusTypeface);
                             arabic5TextView.setVisibility(View.VISIBLE);
                             String arabic5 = new String(getUnicodeString(corpus.getArabic5()));
@@ -442,10 +442,10 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
 
         public AyahViewHolder(View view) {
             super(view);
-            verse_idTextView = (TextView) view.findViewById(R.id.verse_id_textView);
-            flow_word_by_word = (FlowLayout) view.findViewById(R.id.flow_word_by_word);
-            translate_textView = (TextView) view.findViewById(R.id.translate_textView);
-            arabic_textView = (TextView) view.findViewById(R.id.arabic_textView);
+            verse_idTextView = view.findViewById(R.id.verse_id_textView);
+            flow_word_by_word = view.findViewById(R.id.flow_word_by_word);
+            translate_textView = view.findViewById(R.id.translate_textView);
+            arabic_textView = view.findViewById(R.id.arabic_textView);
         }
 
     }

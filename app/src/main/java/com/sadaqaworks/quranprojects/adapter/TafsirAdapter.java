@@ -71,7 +71,7 @@ public class TafsirAdapter extends RecyclerView.Adapter<TafsirAdapter.TafsirView
 
         public TafsirViewHolder(View view) {
             super(view);
-            tafsirTextWebView = (WebView) view.findViewById(R.id.tafsirTextWebView);
+            tafsirTextWebView = view.findViewById(R.id.tafsirTextWebView);
         }
     }
 }

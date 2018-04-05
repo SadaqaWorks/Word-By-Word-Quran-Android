@@ -91,10 +91,10 @@ public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.SurahViewHol
 
         public SurahViewHolder(View view) {
             super(view);
-            translateTextView = (TextView) view.findViewById(R.id.translate_textView);
-            arabicTextView = (TextView) view.findViewById(R.id.arabic_textView);
-            surah_idTextView = (TextView) view.findViewById(R.id.surah_idTextView);
-            row_surah = (RelativeLayout) view.findViewById(R.id.row_surah);
+            translateTextView = view.findViewById(R.id.translate_textView);
+            arabicTextView = view.findViewById(R.id.arabic_textView);
+            surah_idTextView = view.findViewById(R.id.surah_idTextView);
+            row_surah = view.findViewById(R.id.row_surah);
 
             view.setOnClickListener(this); //current clickListerner
         }

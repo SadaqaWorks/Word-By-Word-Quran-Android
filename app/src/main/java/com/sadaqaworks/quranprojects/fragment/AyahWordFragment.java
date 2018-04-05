@@ -66,10 +66,10 @@ public class AyahWordFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ayah_word, container, false);
 
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_ayah_word_view);
+        mRecyclerView = view.findViewById(R.id.recycler_ayah_word_view);
 
         //for fast scroll
-        VerticalRecyclerViewFastScroller fastScroller = (VerticalRecyclerViewFastScroller) view.findViewById(R.id.fast_scroller);
+        VerticalRecyclerViewFastScroller fastScroller = view.findViewById(R.id.fast_scroller);
 
         // Connect the recycler to the scroller (to let the scroller scroll the list)
         fastScroller.setRecyclerView(mRecyclerView);
@@ -100,8 +100,8 @@ public class AyahWordFragment extends Fragment {
 
 
         //set headerview
-        RecyclerViewHeader recyclerViewHeader = (RecyclerViewHeader) view.findViewById(R.id.header);
-        TextView headerTextView = (TextView) recyclerViewHeader.findViewById(R.id.headerTextView);
+        RecyclerViewHeader recyclerViewHeader = view.findViewById(R.id.header);
+        TextView headerTextView = recyclerViewHeader.findViewById(R.id.headerTextView);
         headerTextView.setText(getString(R.string.bismillah));
         recyclerViewHeader.attachTo(mRecyclerView, true);
 

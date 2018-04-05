@@ -50,7 +50,7 @@ public class TafsirFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tafsir, container, false);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_tafsir_view);
+        mRecyclerView = view.findViewById(R.id.recycler_tafsir_view);
         tafsirAdapter = new TafsirAdapter(getActivity(), tafsirArrayList);
         return view;
     }

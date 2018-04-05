@@ -59,7 +59,7 @@ public class SurahFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_surah, container, false);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_surah_view);
+        mRecyclerView = view.findViewById(R.id.recycler_surah_view);
         surahAdapter = new SurahAdapter(surahArrayList, getActivity());
 
         return view;
