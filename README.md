@@ -1,7 +1,7 @@
 # Word By Word Quran Android
 ![Quran Project](https://github.com/SadaqaWorks/QuranProjects/blob/master/quran.gif)
 
-<br />You may try it from [here] (https://raw.githubusercontent.com/SadaqaWorks/Word-By-Word-Quran-Android/master/QuranDemo.apk) 
+<br />You may try it from [here](https://raw.githubusercontent.com/SadaqaWorks/Word-By-Word-Quran-Android/master/QuranDemo.apk) 
 
 There are some other projects with similar idea and features, you can go [here](https://greentechapps.com/apps/quran) or [here](https://play.google.com/store/apps/details?id=com.ihadis.quran) 
 
