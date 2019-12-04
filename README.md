@@ -3,6 +3,8 @@
 
 <br />You may try it from [here](https://raw.githubusercontent.com/SadaqaWorks/Word-By-Word-Quran-Android/master/QuranDemo.apk) 
 
+This codebase is prematured and there lots of room for improvement.
+
 There are some other projects with similar idea and features, you can go [here](https://greentechapps.com/apps/quran) or [here](https://play.google.com/store/apps/details?id=com.ihadis.quran) 
 
 
