@@ -6,6 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.adapter.TafsirAdapter;
 import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
@@ -13,10 +17,6 @@ import com.sadaqaworks.quranprojects.database.datasource.TafsirKathirEnglishData
 import com.sadaqaworks.quranprojects.model.Tafsir;
 
 import java.util.ArrayList;
-
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 /** Created by Sadmansamee on 8/20/15. */
 public class TafsirFragment extends Fragment {

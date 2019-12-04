@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bartoszlipinski.recyclerviewheader.RecyclerViewHeader;
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.adapter.AyahWordAdapter;
@@ -19,8 +22,6 @@ import com.sadaqaworks.quranprojects.util.settings.Config;
 
 import java.util.ArrayList;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller;
 
 /** A simple {@link Fragment} subclass. */
@@ -81,10 +82,6 @@ public class AyahWordFragment extends Fragment {
 
     super.onViewCreated(view, savedInstanceState);
 
-    // set Adapter with Animation
-    //  ScaleInAnimationAdapter scaleInAnimationAdapter = new
-    // ScaleInAnimationAdapter(ayahWordAdapter);
-    //  scaleInAnimationAdapter.setInterpolator(new OvershootInterpolator());
     mRecyclerView.setAdapter(ayahWordAdapter);
     mRecyclerView.setHasFixedSize(true);
     mLayoutManager = new LinearLayoutManager(getActivity());
@@ -102,8 +99,6 @@ public class AyahWordFragment extends Fragment {
   public ArrayList<AyahWord> getAyahWordsBySurah(long surah_id, long ayah_number) {
     ArrayList<AyahWord> ayahWordArrayList = new ArrayList<AyahWord>();
     AyahWordDataSource ayahWordDataSource = new AyahWordDataSource(getActivity());
-    // ayahWordArrayList = ayahWordDataSource.getEnglishAyahWordsBySurahVerse(surah_id,
-    // ayah_number);
 
     switch (lang) {
       case Config.LANG_BN:

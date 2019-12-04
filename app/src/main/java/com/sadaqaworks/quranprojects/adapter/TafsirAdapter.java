@@ -7,12 +7,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.model.Tafsir;
 
 import java.util.ArrayList;
-
-import androidx.recyclerview.widget.RecyclerView;
 
 /** Created by Sadmansamee on 8/20/15. */
 public class TafsirAdapter extends RecyclerView.Adapter<TafsirAdapter.TafsirViewHolder> {

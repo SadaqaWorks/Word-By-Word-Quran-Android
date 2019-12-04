@@ -10,6 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.activity.AyahWordActivity;
 import com.sadaqaworks.quranprojects.adapter.SurahAdapter;
@@ -19,10 +23,6 @@ import com.sadaqaworks.quranprojects.model.Surah;
 import com.sadaqaworks.quranprojects.util.settings.Config;
 
 import java.util.ArrayList;
-
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 /** A simple {@link Fragment} subclass. */
 public class SurahFragment extends Fragment {
@@ -64,11 +64,6 @@ public class SurahFragment extends Fragment {
   public void onViewCreated(View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    // set Adapter with Animation
-    //  SlideInLeftAnimationAdapter slideInLeftAnimationAdapter = new
-    // SlideInLeftAnimationAdapter(surahAdapter);
-    //  slideInLeftAnimationAdapter.setInterpolator(new OvershootInterpolator());
-    //  slideInLeftAnimationAdapter.setFirstOnly(false);
     mRecyclerView.setAdapter(surahAdapter);
 
     mRecyclerView.setHasFixedSize(true);
@@ -83,7 +78,7 @@ public class SurahFragment extends Fragment {
           public void onItemClick(View v, int position) {
             Surah surah = (Surah) surahAdapter.getItem(position);
 
-            long surah_id = surah.getId(); // mRecyclerView.getAdapter().getItemId(position);
+            long surah_id = surah.getId();
             long ayah_number = surah.getAyahNumber();
             String surah_name = surah.getNameTranslate();
 
@@ -99,23 +94,6 @@ public class SurahFragment extends Fragment {
             startActivity(intent);
           }
         });
-
-    /* mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), mRecyclerView, new RecyclerItemClickListener.OnItemClickListener() {
-        @Override
-        public void onItemClick(View view, int position) {
-
-
-           long id =  mRecyclerView.getAdapter().getItemId(position);
-
-            Log.d("SurahFragment", "position: " + id);
-        }
-
-        @Override
-        public void onItemLongClick(View view, int position) {
-
-        }
-    }));*/
-
   }
 
   private ArrayList<Surah> getSurahArrayList() {

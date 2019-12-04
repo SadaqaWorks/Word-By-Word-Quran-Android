@@ -6,10 +6,10 @@ import android.preference.PreferenceFragment;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 
-import com.sadaqaworks.quranprojects.R;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.sadaqaworks.quranprojects.R;
 
 public class SettingsActivity extends AppCompatActivity {
 

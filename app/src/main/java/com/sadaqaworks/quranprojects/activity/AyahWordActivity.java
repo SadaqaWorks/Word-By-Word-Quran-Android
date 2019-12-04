@@ -7,13 +7,13 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
 import com.sadaqaworks.quranprojects.fragment.AyahWordFragment;
 import com.sadaqaworks.quranprojects.util.settings.Config;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class AyahWordActivity extends AppCompatActivity {
 
@@ -78,27 +78,4 @@ public class AyahWordActivity extends AppCompatActivity {
       getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
   }
-
-  /*
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu) {
-      // Inflate the menu; this adds items to the action bar if it is present.
-      getMenuInflater().inflate(R.menu.menu_ayah, menu);
-      return true;
-  }
-
-  @Override
-  public boolean onOptionsItemSelected(MenuItem item) {
-      // Handle action bar item clicks here. The action bar will
-      // automatically handle clicks on the Home/Up button, so long
-      // as you specify a parent activity in AndroidManifest.xml.
-      int id = item.getItemId();
-
-      //noinspection SimplifiableIfStatement
-      if (id == R.id.action_settings) {
-          return true;
-      }
-
-      return super.onOptionsItemSelected(item);
-  }*/
 }

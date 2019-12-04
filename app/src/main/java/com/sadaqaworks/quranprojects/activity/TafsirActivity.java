@@ -3,11 +3,11 @@ package com.sadaqaworks.quranprojects.activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
 
-import com.sadaqaworks.quranprojects.R;
-import com.sadaqaworks.quranprojects.fragment.TafsirFragment;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.sadaqaworks.quranprojects.R;
+import com.sadaqaworks.quranprojects.fragment.TafsirFragment;
 
 /** Created by Sadmansamee on 8/20/15. */
 public class TafsirActivity extends AppCompatActivity {

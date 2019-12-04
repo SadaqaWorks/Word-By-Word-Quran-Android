@@ -13,6 +13,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.database.DatabaseHelper;
 import com.sadaqaworks.quranprojects.database.datasource.SurahDataSource;
@@ -22,10 +26,6 @@ import com.sadaqaworks.quranprojects.util.settings.Config;
 
 import java.util.ArrayList;
 import java.util.Locale;
-
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -95,19 +95,9 @@ public class MainActivity extends AppCompatActivity {
     switch (item.getItemId()) {
       case R.id.action_settings:
         Intent intent = new Intent(this, SettingsActivity.class);
-        // intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
-        // MainActivity.this.finish();
         return true;
-
-        /*
-        case R.id.rateUs:
-            Intent intentRate = new Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse(getString(R.string.hisnul_muslim_url)));
-            startActivity(intentRate);*/
 
       default:
         return super.onOptionsItemSelected(item);
@@ -116,11 +106,8 @@ public class MainActivity extends AppCompatActivity {
 
   public boolean setLanguage() {
 
-    // CharSequence lang[] = new CharSequence[]{"Bangla", "English","Indonesian"};
-    String lang[] = getResources().getStringArray(R.array.lang_names);
+      String[] lang = getResources().getStringArray(R.array.lang_names);
 
-    // SharedPreferences.Editor ed = sharedPreferences.edit();
-    // ed.clear();
     final AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setCancelable(true);
     builder.setTitle(getResources().getString(R.string.lang));

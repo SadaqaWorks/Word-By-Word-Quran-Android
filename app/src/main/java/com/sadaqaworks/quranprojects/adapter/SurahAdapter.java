@@ -7,14 +7,14 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.intrface.OnItemClickListener;
 import com.sadaqaworks.quranprojects.model.Surah;
 
 import java.util.ArrayList;
-
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.RecyclerView;
 
 /** Created by Sadmansamee on 7/19/15. */
 public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.SurahViewHolder> {
@@ -41,7 +41,7 @@ public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.SurahViewHol
   public void onBindViewHolder(SurahAdapter.SurahViewHolder holder, int position) {
 
     Surah surah = surahArrayList.get(position);
-    holder.surah_idTextView.setText(Long.toString(surah.getId()) + ".");
+    holder.surah_idTextView.setText(surah.getId() + ".");
     holder.translateTextView.setText(surah.getNameTranslate());
     holder.arabicTextView.setText(surah.getNameArabic());
 

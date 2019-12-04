@@ -14,6 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.sadaqaworks.quranprojects.R;
 import com.sadaqaworks.quranprojects.activity.TafsirActivity;
 import com.sadaqaworks.quranprojects.database.datasource.AyahWordDataSource;
@@ -25,9 +28,6 @@ import com.sadaqaworks.quranprojects.util.settings.Config;
 import com.sadaqaworks.quranprojects.view.layout.FlowLayout;
 
 import java.util.ArrayList;
-
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.RecyclerView;
 
 /** Created by Sadmansamee on 7/19/15. */
 public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahViewHolder> {
@@ -96,7 +96,7 @@ public class AyahWordAdapter extends RecyclerView.Adapter<AyahWordAdapter.AyahVi
 
     // holder.verse_idTextView.setText("\uFD3F" + intToArabic(ayahWord.getQuranVerseId()) +
     // "\uFD3E");
-    holder.verse_idTextView.setText("(" + Long.toString(ayahWord.getQuranVerseId()) + ")");
+    holder.verse_idTextView.setText("(" + ayahWord.getQuranVerseId() + ")");
 
     if (wordByWord) {
       final LayoutInflater inflater =
